@@ -1,12 +1,5 @@
 package com.publicissapient.creditcard.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
 public class JwtRequest {
 
 	private String username;
@@ -24,4 +17,15 @@ public class JwtRequest {
 		this.password = password;
 	}
 
+
+	public JwtRequest() {
+		super();
+	}
+
+	public JwtRequest(String username, String password) {
+		super();
+		this.username = username;
+		this.password = password;
+	}
+	
 }
